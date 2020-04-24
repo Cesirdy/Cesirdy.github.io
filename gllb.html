@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>咕噜灵波♪</title>
+<div id="咕噜灵波♪">
+</div>
+<style>
+*{padding:0;margin:0}h1{position:absolute;font-size:50px;font-weight:bolder}body,html{height:100%;width:100%;overflow:hidden;background-color:#fff}
+</style>
+
+<script>
+function moe() {
+	var o = Math.floor(Math.random() * window.innerWidth) - 50,
+		t = Math.floor(Math.random() * window.innerHeight) - 50,
+		n = Math.floor(255 * Math.random()),
+		a = Math.floor(255 * Math.random()),
+		r = Math.floor(255 * Math.random()),
+		h = "rgb(" + n + "," + a + "," + r + ")";
+	document.getElementById("咕噜灵波♪").innerHTML = "<h1 style='top:" + t + "px;left:" + o + "px;color:" + h + "'>咕噜灵波♪</h1>"
+}
+function random(o, t) {
+	return Math.floor(o + Math.random() * (t - o))
+}
+setInterval(moe, 10);
+</script>
